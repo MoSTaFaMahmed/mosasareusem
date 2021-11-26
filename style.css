@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  line-height: 1.5;
+  background-color: #f3f3f3;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Staatliches", cursive;
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+.container {
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+/*Navigation*/
+#main-nav {
+  background-color: rgb(33, 34, 38);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 1em;
+}
+
+#main-nav .container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 6fr 2fr 3fr;
+  align-items: center;
+}
+.main-nav ul {
+  display: flex;
+  justify-self: end;
+  flex-wrap: wrap;
+}
+#main-nav .logo {
+  font: 2rem sans-serif;
+  float: left;
+  color: #fff;
+}
+#main-nav ul {
+  justify-self: end;
+  display: flex;
+}
+#main-nav ul li a {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+}
+#main-nav ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: black;
+  opacity: 1;
+}
+#main-nav .social i {
+  margin-right: 0.5rem;
+  color: #869c98;
+}
+/*intro*/
+#intro {
+  height:70vh;
+}
+
+#intro .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 55px;
+}
+.txt {
+  color: rgb(130, 162, 200);
+  border: solid 0 5px;
+  border-radius: 10px 20px;
+  box-shadow: 10px 10px rgb(150, 81, 44);
+}
+.txt a{
+   color:darkred;
+   
+}
+.txt a:hover{
+     color:darkgray;
+     
+  }
+
+/*Education*/
+
+.education .container {
+  margin: 0 0 0 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.education .container h2 {
+  justify-self: center;
+  color: rgb(130, 162, 200);
+}
+
+.work .container h1,
+.education .container h1 {
+  padding-top: 4rem;
+  grid-column: 1 / span 2;
+  align-items: center;
+  justify-self: center;
+
+  text-transform: uppercase;
+  color: rgb(130, 162, 200);
+  text-shadow: 1px 1px 2px rgb(150, 81, 44), 0 0 25px #8a8a8a, 0 0 5px orangered;
+}
+
+/*skills*/
+.skills .container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.skills .container h2 {
+  justify-self: center;
+  color: rgb(130, 162, 200);
+}
+.skills {
+  background-color: rgb(33, 34, 38);
+  height: 30vh;
+}
+.skills .container h1 {
+  padding-top: 4rem;
+  grid-column: 1 / span 4;
+  align-items: center;
+  justify-self: center;
+
+  text-transform: uppercase;
+  color: rgb(130, 162, 200);
+  text-shadow: 1px 1px 2px rgb(150, 81, 44), 0 0 25px #8a8a8a, 0 0 5px orangered;
+}
+/*Work*/
+.py-2 {
+  padding: 1rem 0;
+}
+
+.work .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.work-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.work-img img {
+  width: 100%;
+  height: 100%;
+}
+.work-img img:hover {
+  border: 4px solid #e7c7c7;
+}
+
+.fimg {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.fimg:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 2rem;
+  color: #fff;
+  background-color: #869c98;
+
+  border-radius: 3rem;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  position: relative;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/*contact*/
+
+.footer .containr {
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+  margin-top:10px;
+  padding: 1.2rem;
+  background-color: rgb(33, 34, 38);
+  text-align: center;
+  font-size: 1rem;
+}
+.footer .containr input[type='text'],input[type='email']{
+     width: 50%;
+     margin: auto;
+     padding: 0.5rem;
+margin-bottom: 0.5rem;     
+}
+.footer .containr  input[type='submit']{
+     margin: auto;
+     padding: 0.5rem;
+margin-bottom: 0.5rem;   
+     width:50%;
+     background-color: darkred;
+     border-color: darkred;
+}
